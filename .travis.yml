@@ -41,3 +41,9 @@ install:
 script:
     # - platformio ci --project-conf=./platformio.ini
     - platformio run
+deploy:
+  provider: releases
+  api_key:
+    secure: f253048d276b66648c2cb431244192843a2415c0
+  file: ".pio/build/esp32dev/firmware.bin"
+  skip_cleanup: true
