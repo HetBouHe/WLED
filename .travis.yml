@@ -51,6 +51,6 @@ before_deploy:
 
 deploy:
   provider: releases
-  github_token: $TRAVIS_CI
+  api_key: $TRAVIS_CI
   file: ".pio/build/esp32dev/firmware.bin"
   skip_cleanup: true
