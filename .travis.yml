@@ -44,6 +44,6 @@ script:
 deploy:
   provider: releases
   api_key:
-    secure: c291239ae94487350173debe7474a94c953bdcd9
+    secure: d9f98e5cdbb0f0e034ee33a157fb4358a2308d48
   file: ".pio/build/esp32dev/firmware.bin"
   skip_cleanup: true
